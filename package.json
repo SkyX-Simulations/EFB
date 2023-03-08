@@ -3,14 +3,20 @@
   "version": "1.0.0",
   "description": "EFB from Boeing 787-9",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx rollup -c"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
     "msfssdk": "file:../AAU/src/sdk/build",
+    "rollup": "^3.18.0",
+    "rollup-plugin-import-css": "^3.2.1",
+    "tslib": "^2.5.0",
     "typescript": "^4.9.5"
   }
 }
